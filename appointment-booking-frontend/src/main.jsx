@@ -7,7 +7,7 @@ import { SessionContextProvider } from '@supabase/auth-helpers-react';
 
 const supabase = createClient(
   "https://bltqgfkytamdvfzsgdsr.supabase.co",
-  ""
+  import.meta.env.VITE_SECRET_KEY_SUPABASE
 )
 
 createRoot(document.getElementById('root')).render(
